@@ -323,7 +323,7 @@ Let us go through the steps in more detail:
 
 ---
 
-If you do not know how heaps / `free` work in general, the best analogy I can come up with is a large plot of land.
+If you do not know how heaps / `free` work in general, the best analogy I have heard of is a large plot of land.
 
 Initially, the land is (almost) empty. When we want to use the land to construct buildings, we start at the top and demarcate the required chunk of land row by row in an organised manner.
 
