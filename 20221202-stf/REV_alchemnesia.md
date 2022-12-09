@@ -240,10 +240,11 @@ long FUN_004031b3(void)
     // ...
     return lVar1;
 }
+```
 
 Wow, now there is some interesting stuff. We can sort of see that this is where the user inputs the byte string.
 
-`0x42fef0` and `0x401110` look like libc functions, and I am guessing that they are `malloc` and `memset` respectively. Then we see some form of read and some form of write, and then it is the familiar code again, which simplifies to:
+`0x42fef0` and `0x401110` look like libc functions, and I'm guessing that they are `malloc` and `memset` respectively. Then we see some form of read and some form of write, and then it is the familiar code again, which simplifies to:
 
 ```c
     return 0x403154(0x402f59(0x402fc4(0x402f59(0x402efa(lVar1)))));
