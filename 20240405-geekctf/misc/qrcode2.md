@@ -32,7 +32,7 @@ For this, there is actually a very helpful online tool - [QRazyBox](https://merr
 
 To parse a QR code, first we need to read its """metadata""", or format info. You can find out more about them in the wikipedia article, but basically it is made up of 2 identical sets (for erasure resistance) of a string of 15 bits (pixels) surrounding the 3 finder patterns. Of the 15 bits, 5 contain actual data, while the remaining 10 are redundancy bits for, again, error/erasure correction.
 
-![QR Format Information from Wikipedia](https://en.wikipedia.org/wiki/QR_code#/media/File:QR_Format_Information.svg)
+![QR Format Information from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/3/3b/QR_Format_Information.svg)
 
 And, what a surprise, we already have 4 out of the 5 bits! Most importantly we have the 3 mask bits that determine the mask pattern applied to the data bits of the QR code, so we don't have to perform extra guessing. (Note that another mask is itself separately applied to the 15 bits.)
 
