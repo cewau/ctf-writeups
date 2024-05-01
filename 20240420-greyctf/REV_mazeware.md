@@ -886,7 +886,7 @@ xor     r9, r9
 
 Firstly, the start of the mini `null` region and the `GOT` entry for `getchar` are saved in `r10` and `r15` respectively.
 
-Next, see point 3 of [Part IIC](#part-iic-idk2). Here the first word (saved in `rcx`) seems to be treated as the size of the data, with `rdi` pointing to the end of the data. `rsi` in turn points to what seems like a key (as mentioned, used in the `RC4` algorithm).
+Next, see point 3 of [Part IIC](#part-iic-forensic-investigation). Here the first word (saved in `rcx`) seems to be treated as the size of the data, with `rdi` pointing to the end of the data. `rsi` in turn points to what seems like a key (as mentioned, used in the `RC4` algorithm).
 
 Now another loop:
 
