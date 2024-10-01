@@ -1,0 +1,15 @@
+{
+  "name": "i2c-sniffer",
+  "author": "",
+  "pins": [
+    "GND",
+    "VCC",
+    "SDA",
+    "SCL",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "controls": []
+}

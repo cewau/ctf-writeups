@@ -1,0 +1,11 @@
+{
+  "name": "uart-key",
+  "author": "",
+  "pins": [
+    "RX",
+    "TX",
+    "GND",
+    "VCC"
+  ],
+  "controls": []
+}
