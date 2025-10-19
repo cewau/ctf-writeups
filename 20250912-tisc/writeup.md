@@ -188,7 +188,7 @@ In terms of having a list of `X`,`Y`-values, the first thing that comes to mind 
 
 ![](images/3/plot.png)
 
-In particular, some of the points seem to be on a different order entirely (e.g. `e-38` vs `e-44`), where interesting some of them are quite close to the 32 bit floating point limit ($\sim 10^{-45}$). We need to look at the values ourselves closer, and that's when it clicked -- if you have done any reverse engineering, or even [Browser Exploitation](##[9]) actually, you might realise that perhaps the floats encode some underlying meaningful bytes. No harm trying, we plug the first value into a [floating point visualiser](https://float.exposed/0x00570061) and we actually get out some ASCII bytes interspersed between null bytes: `0x00570061`. We can thus hack up a quick script to extract the working bytes:
+In particular, some of the points seem to be on a different order entirely (e.g. `e-38` vs `e-44`), where interesting some of them are quite close to the 32 bit floating point limit ($\sim 10^{-45}$). We need to look at the values ourselves closer, and that's when it clicked -- if you have done any reverse engineering, or even [Browser](https://github.com/cewau/ctf-writeups/blob/main/20230915-tisc/9.md) [Exploitation](#8) actually, you might realise that perhaps the floats encode some underlying meaningful bytes. No harm trying, we plug the first value into a [floating point visualiser](https://float.exposed/0x00570061) and we actually get out some ASCII bytes interspersed between null bytes: `0x00570061`. We can thus hack up a quick script to extract the working bytes:
 
 ```python
 import struct
